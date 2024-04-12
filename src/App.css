@@ -1,38 +1,101 @@
-.App {
+body {
+  background-color: #1f1f1f;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 200px;
+  height: 270px;
+  background: linear-gradient(to right, #1f1f1f, #212121);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url("../src/R\ \(1\).jpeg");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+
+.weather-header {
+  font-size: 25px;
+  width: 45%;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #212121;
+  border-radius: 10px;
+  display: block; /* Set display to block to occupy full width */
+  margin: 0 auto; /* Center horizontally */
+}
+h1 {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+.location {
+  font-size: 19px;
+  text-align: center;
+  font-weight: bolder;
+}
+.time {
+  text-align: center;
+  margin-top: -16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  width: 40%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block; /* Set display to block to occupy full width */
+  margin: 0 auto; /* Center horizontally */
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #1a4d1e;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error-message {
+  color: #ff4444;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.iconDiv {
+  position: absolute; /* Set position to absolute */
+  left: 50%; /* Center horizontally */
+  top: 30%; /* Center vertically */
+  transform: translate(-50%, -50%); /* Adjust position to center*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.weather-data {
+  text-align: center;
+}
+img {
+  position: absolute; /* Set position to absolute */
+  left: 50%; /* Center horizontally */
+  top: 33.5%; /* Center vertically */
+  transform: translate(-50%, -50%); /* Adjust position to center*/
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
